@@ -41,7 +41,7 @@ initializedPassport(passport)
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.use(express.static('public'))
+app.use(express.static('src/public'))
 
 app.use('/api/mensajes', messageRoutes)
 app.use('/api/productos', productRoutes)
